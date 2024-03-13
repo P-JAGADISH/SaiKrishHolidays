@@ -292,6 +292,7 @@ height: 110px;  }
 
 .social-link {
   color: var(--white);
+  margin-top: 14px;
   padding: 8px;
   border: 1px solid hsla(0, 0%, 100%, 0.3);
   border-radius: 50%;
@@ -661,24 +662,26 @@ font-size: xx-large; }
   color: var(--gainsboro);
 }
 
-.footer-brand { margin-bottom: 30px; }
+.footer-brand { margin-bottom: 30px; width: 500px;  }
 
-.footer-brand img { width: 180px; }
+.footer-brand img { width: 180px; margin-left: 100px;}
 
 .footer-brand .logo { margin-bottom: 20px; }
 
 .footer-text {
   font-size: var(--fs-5);
   line-height: 1.7;
+  margin-left: 30px;
 }
 
-.footer-contact { margin-bottom: 30px; }
+.footer-contact { margin-bottom: 30px; width: 500px; padding-left: 80px; }
 
 .contact-title {
   position: relative;
   font-family: var(--ff-montserrat);
   font-weight: var(--fw-500);
   margin-bottom: 30px;
+  
 }
 
 .contact-title::after {
@@ -742,6 +745,8 @@ address {
   color: var(--gainsboro);
   font-size: var(--fs-5);
   margin-bottom: 10px;
+ margin-left: 8x;
+
 }
 
 .copyright a {
@@ -849,7 +854,7 @@ address {
 
   .card-text { --fs-5: 15px; }
 
-
+  
 
   /**
    * HEADER
@@ -887,25 +892,7 @@ address {
 
 
 
-  /**
-   * TOUR SEARCH
-   */
-
-  .tour-search-form {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    align-items: flex-end;
-    gap: 15px;
-  }
-
-  .tour-search-form .input-wrapper { margin-bottom: 0; }
-
-  .tour-search-form .input-field { padding: 16px 20px; }
-
-  .tour-search .btn {
-    grid-column: span 2;
-    margin-top: 20px;
-  }
+  
 
 
 
@@ -920,7 +907,8 @@ address {
   /**
    * FOOTER
    */
-
+  
+   .footer-contact { margin-bottom: 30px; margin-left: 150px; }
   .footer .container {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -1172,18 +1160,6 @@ address {
   .hero .container { max-width: 740px; }
 
 
-
-  /**
-   * TOUR SEARCH
-   */
-
-  .tour-search-form { grid-template-columns: repeat(5, 1fr); }
-
-  .tour-search .btn {
-    --padding: 15px;
-    grid-column: unset;
-    margin-top: 0;
-  }
 
 
 
