@@ -586,9 +586,9 @@ font-size: xx-large; }
 .package-card .card-rating ion-icon:last-child { color: hsl(0, 0%, 80%); }
 
 .package-card .price {
-  font-size: var(--fs-2);
+  font-size: var(--fs-3);
   font-family: var(--ff-montserrat);
-  font-weight: var(--fw-800);
+  font-weight: var(--fw-200);
   margin-bottom: 20px;
 }
 
