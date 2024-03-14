@@ -144,7 +144,7 @@ body { background: var(--white); }
 }
 
 .btn-primary {
-  background: var(--bright-navy-blue);
+  background: var(--bright-navy-white);
   border-color: var(--bright-navy-blue);
 }
 
@@ -153,9 +153,10 @@ body { background: var(--white); }
   border-color: var(--yale-blue);
 }
 
-.btn-secondary { border-color: var(--white); }
+.btn-secondary { border-color: var(--white);
+color: white; }
 
-.btn-secondary:is(:hover, :focus) { background: hsla(0, 0%, 100%, 0.1); }
+.btn-secondary:is(:hover, :focus) { background: hsla(0, 18%, 90%, 0.979); }
 
 .h1,
 .h2,
@@ -860,20 +861,20 @@ address {
    * HEADER
    */
 
-  .header { padding-top: 83px; }
+   .header { padding-top: 83px; }
 
-  .helpline-box .icon-box { padding: 14px; }
-
-  .header-top .logo img { max-width: unset; }
-
-  .search-btn { font-size: 30px; }
-
-  .nav-open-btn { font-size: 40px; }
-
-  .header .btn {
-    --fs-5: 14px;
-    --padding: 6px 20px;
-  }
+   .helpline-box .icon-box { padding: 14px; }
+ 
+   .header-top .logo img { max-width: unset; }
+ 
+   .search-btn { font-size: 30px; }
+ 
+   .nav-open-btn { font-size: 40px; }
+ 
+   .header .btn {
+     --fs-5: 14px;
+     --padding: 6px 20px;
+   }
 
 
 
@@ -1206,19 +1207,58 @@ address {
 
 }
 
-
-
-
-
 /**
  * responsive for larger than 1200px screen
  */
 
-@media (min-width: 1200px) {
+@media (min-width: 1280px) {
 
   /**
    * CUSTOM PROPERTY
    */
+
+   .container {
+    max-width: 1360px;
+    margin-inline: auto;
+  }
+/**
+   * HEADER
+   */
+
+   .header { padding-top: 120px; }
+
+   .helpline-box .icon-box { padding: 20px; }
+ 
+   .header-top .logo img { max-width: unset; }
+ 
+   .search-btn { font-size: 30px; }
+ 
+   .nav-open-btn { font-size: 40px; }
+ 
+   .header .btn {
+     --fs-5: 14px;
+     --padding: 6px 20px;
+   }
+
+
+    /**
+   * HERO
+   */
+
+  .hero {
+    min-height: 1200px;
+    padding-top: 120px;
+  }
+
+  .hero-text { --fs-5: 15px; }
+
+  .btn-group { gap: 20px; }
+  /**
+   * POPULAR
+   */
+
+   .popular-card .card-content { right: auto; }
+
 
   :root {
 
@@ -1229,9 +1269,6 @@ address {
     --section-padding: 100px;
 
   }
-
-
-
   /**
    * REUSED STYLE
    */
