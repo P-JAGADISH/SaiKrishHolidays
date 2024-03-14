@@ -1218,24 +1218,7 @@ address {
    */
 
   
-/**
-   * HEADER
-   */
 
-   .header { padding-top: 200px; }
-
-   .helpline-box .icon-box { padding: 20px; }
- 
-   .header-top .logo img { max-width: unset; }
- 
-   .search-btn { font-size: 30px; }
- 
-   .nav-open-btn { font-size: 40px; }
- 
-   .header .btn {
-     --fs-5: 14px;
-     --padding: 6px 20px;
-   }
 
 
   :root {
