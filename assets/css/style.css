@@ -1238,25 +1238,6 @@ address {
    }
 
 
-    /**
-   * HERO
-   */
-
-  .hero {
- 
-    padding-top: 120px;
-  }
-
-  .hero-text { --fs-5: 15px; }
-
-  .btn-group { gap: 20px; }
-  /**
-   * POPULAR
-   */
-
-   .popular-card .card-content { right: auto; }
-
-
   :root {
 
     /**
