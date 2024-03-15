@@ -1093,11 +1093,7 @@ address {
    */
 
   .container { max-width: 1050px; }
-  .package-card .card-banner img {
-  width: auto;
-  height: auto;
-  object-fit: cover;
-}
+ 
 
 
 
