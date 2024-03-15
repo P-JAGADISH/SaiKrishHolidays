@@ -663,7 +663,7 @@ font-size: xx-large; }
   color: var(--gainsboro);
 }
 
-.footer-brand { margin-bottom: 30px; width: 500px;  }
+.footer-brand { margin-bottom: 30px; width: auto;  }
 
 .footer-brand img { width: 180px; margin-left: 100px;}
 
@@ -675,7 +675,7 @@ font-size: xx-large; }
   margin-left: 25px;
 }
 
-.footer-contact { margin-bottom: 30px; width: 500px; padding-left: 70px; }
+.footer-contact { margin-bottom: 30px; width:auto; padding-left: 25px; }
 
 .contact-title {
   position: relative;
@@ -909,11 +909,12 @@ address {
    * FOOTER
    */
   
-   .footer-contact { margin-bottom: 30px; margin-left: 150px; }
+   .footer-contact { margin-bottom: 30px; margin-left: 25px; }
   .footer .container {
-    display: grid;
+    display: flex;
     grid-template-columns: 1fr 1fr;
     gap: 30px;
+    margin-top:50px
   }
 
   .footer-form { grid-column: span 2; }
