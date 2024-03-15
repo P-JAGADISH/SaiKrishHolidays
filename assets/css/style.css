@@ -375,12 +375,13 @@ height: 110px;  }
 
 
 
+
 /*-----------------------------------*\
  * #HERO
 \*-----------------------------------*/
 
 .hero {
-  background-image: url("../images/hero-banner.jpg");
+  background-image: url("../images/img3.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -393,7 +394,8 @@ height: 110px;  }
   padding-top: 125px;
 }
 
-.hero-title { margin-bottom: 20px; }
+.hero-title { margin-bottom: 20px;
+font-size: xx-large; }
 
 .hero-text {
   color: var(--white);
@@ -413,44 +415,6 @@ height: 110px;  }
 
 
 
-/*-----------------------------------*\
- * #TOUR SEARCH
-\*-----------------------------------*/
-
-.tour-search {
-  background: var(--bright-navy-blue);
-  padding-block: var(--section-padding);
-}
-
-.tour-search-form .input-label {
-  color: var(--white);
-  font-size: var(--fs-4);
-  margin-left: 20px;
-  margin-bottom: 10px;
-}
-
-.tour-search-form .input-field {
-  background: var(--white);
-  padding: 10px 15px;
-  font-size: var(--fs-5);
-  border-radius: 50px;
-}
-
-.tour-search-form .input-field::placeholder { color: var(--spanish-gray); }
-
-.tour-search-form .input-field::-webkit-datetime-edit {
-  color: var(--spanish-gray);
-  text-transform: uppercase;
-}
-
-.tour-search-form .input-wrapper { margin-bottom: 15px; }
-
-.tour-search .btn {
-  width: 100%;
-  --border-width: 1px;
-  font-weight: var(--fw-600);
-  margin-top: 35px;
-}
 
 
 
@@ -624,9 +588,9 @@ height: 110px;  }
 .package-card .card-rating ion-icon:last-child { color: hsl(0, 0%, 80%); }
 
 .package-card .price {
-  font-size: var(--fs-2);
+  font-size: var(--fs-3);
   font-family: var(--ff-montserrat);
-  font-weight: var(--fw-800);
+  font-weight: var(--fw-200);
   margin-bottom: 20px;
 }
 
@@ -699,24 +663,26 @@ height: 110px;  }
   color: var(--gainsboro);
 }
 
-.footer-brand { margin-bottom: 30px; }
+.footer-brand { margin-bottom: 30px; width: auto;  }
 
-.footer-brand img { width: 180px; }
+.footer-brand img { width: 180px; margin-left: 100px;}
 
 .footer-brand .logo { margin-bottom: 20px; }
 
 .footer-text {
   font-size: var(--fs-5);
   line-height: 1.7;
+  margin-left: 25px;
 }
 
-.footer-contact { margin-bottom: 30px; }
+.footer-contact { margin-bottom: 30px; width: auto; padding-left: 25px; }
 
 .contact-title {
   position: relative;
   font-family: var(--ff-montserrat);
   font-weight: var(--fw-500);
   margin-bottom: 30px;
+  
 }
 
 .contact-title::after {
@@ -780,6 +746,8 @@ address {
   color: var(--gainsboro);
   font-size: var(--fs-5);
   margin-bottom: 10px;
+ margin-left: 8x;
+
 }
 
 .copyright a {
@@ -887,26 +855,26 @@ address {
 
   .card-text { --fs-5: 15px; }
 
-
+  
 
   /**
    * HEADER
    */
 
-  .header { padding-top: 83px; }
+   .header { padding-top: 83px; }
 
-  .helpline-box .icon-box { padding: 14px; }
-
-  .header-top .logo img { max-width: unset; }
-
-  .search-btn { font-size: 30px; }
-
-  .nav-open-btn { font-size: 40px; }
-
-  .header .btn {
-    --fs-5: 14px;
-    --padding: 6px 20px;
-  }
+   .helpline-box .icon-box { padding: 14px; }
+ 
+   .header-top .logo img { max-width: unset; }
+ 
+   .search-btn { font-size: 30px; }
+ 
+   .nav-open-btn { font-size: 40px; }
+ 
+   .header .btn {
+     --fs-5: 14px;
+     --padding: 6px 20px;
+   }
 
 
 
@@ -925,25 +893,7 @@ address {
 
 
 
-  /**
-   * TOUR SEARCH
-   */
-
-  .tour-search-form {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    align-items: flex-end;
-    gap: 15px;
-  }
-
-  .tour-search-form .input-wrapper { margin-bottom: 0; }
-
-  .tour-search-form .input-field { padding: 16px 20px; }
-
-  .tour-search .btn {
-    grid-column: span 2;
-    margin-top: 20px;
-  }
+  
 
 
 
@@ -958,11 +908,13 @@ address {
   /**
    * FOOTER
    */
-
+  
+   .footer-contact { margin-bottom: 30px; margin-left: 25px; }
   .footer .container {
-    display: grid;
+    display: flex;
     grid-template-columns: 1fr 1fr;
     gap: 30px;
+    margin-top: 50px;
   }
 
   .footer-form { grid-column: span 2; }
@@ -1211,18 +1163,6 @@ address {
 
 
 
-  /**
-   * TOUR SEARCH
-   */
-
-  .tour-search-form { grid-template-columns: repeat(5, 1fr); }
-
-  .tour-search .btn {
-    --padding: 15px;
-    grid-column: unset;
-    margin-top: 0;
-  }
-
 
 
   /**
@@ -1268,19 +1208,19 @@ address {
 
 }
 
-
-
-
-
 /**
  * responsive for larger than 1200px screen
  */
 
-@media (min-width: 1200px) {
+@media (min-width: 1280px) {
 
   /**
    * CUSTOM PROPERTY
    */
+
+  
+
+
 
   :root {
 
@@ -1291,9 +1231,6 @@ address {
     --section-padding: 100px;
 
   }
-
-
-
   /**
    * REUSED STYLE
    */
