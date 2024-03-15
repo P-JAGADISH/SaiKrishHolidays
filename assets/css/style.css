@@ -394,7 +394,7 @@ height: 110px;  }
   padding-top: 125px;
 }
 
-.hero-title { margin-bottom: 20px;
+.hero-title { margin:30px 0 20px;
 font-size: xx-large; }
 
 .hero-text {
@@ -1014,7 +1014,8 @@ address {
 
   .package-card {
     display: grid;
-    grid-template-columns: 1.3fr 1.5fr 1fr;
+/*     grid-template-columns: 1.3fr 1.5fr 1fr; */
+     margin:0 40 px;
   }
 
   .package-card .card-banner { height: 100%; }
